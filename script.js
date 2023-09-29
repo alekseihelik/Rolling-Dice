@@ -3,11 +3,11 @@ function rollDie() {
 }
 
 function rollDice() {
-    var die1Value = rollDie();
-    var die2Value = rollDie();
-    var total = die1Value + die2Value;
+    const die1 = rollDie();
+    const die2 = rollDie();
+    const total = die1 + die2;
 
-    document.getElementById('die1').textContent = 'Die 1: ' + die1Value;
-    document.getElementById('die2').textContent = 'Die 2: ' + die2Value;
+    document.getElementById('die1').textContent = 'Die 1: ' + die1;
+    document.getElementById('die2').textContent = 'Die 2: ' + die2;
     document.getElementById('total').textContent = 'Total: ' + total;
 }
